@@ -1,14 +1,16 @@
 # Introduction
  
-These notes cover mining Tari on the Linux command line. The setup documented here
-is uses Ubuntu 22.04 with one or more GPUs. The notes assume you will be using the 
-console wallet.
+These notes cover mining Tari on the Linux command line. The setup documented here assumes 
+a Linux server running Ubuntu 22.04 with one or more GPUs. For simplicity, we'll be using 
+the console wallet.
 
-These notes don't assume that you have a Linux desktop available to you. The 
-command line is all you need.
+We'll also assume that you're only interested in mining on the Tari mainnet. 
 
-Please be aware that at present these notes are incomplete but I hope to address
-more of the topic over time.
+These notes don't assume that you have a Linux desktop available to you. The command line 
+is all you need.
+
+[Please be aware that at present these notes are incomplete but I hope to address more of 
+the topic over time.]
 
 ## Criticisms and corrections and ideas
 
@@ -28,7 +30,7 @@ If you're on Ubuntu 22.04 you should see:
 Ubuntu 22.04.4 LTS
 ```
 
-Otherwise, the one-liner script tries very hard to return as useful value, eg: 
+Otherwise, the one-liner script tries very hard to return a useful value, eg: 
 
 ```console
 Ubuntu 20.04.6 LTS
@@ -39,18 +41,22 @@ Raspbian GNU/Linux 10 (buster)
 Ubuntu quantal (12.10)
 ```
   
-These command line instructions might help you with other, recent Linux OSes, but for now we're concentratng 
-on Ubunu 22.04
+These command line instructions might also help you with other recent Linux OSes, but for 
+now we're concentratng on Ubunu 22.04
 
 ## Step 2. Download tari-suite
 
-Using your desktop browser, (or a browser in the Linux desktop if you have one), go to this page to see the 
-latest offerings: https://github.com/tari-project/tari/releases
+Using your desktop browser, (or a browser in the Linux desktop if you have one), go to this page 
+to see the latest offerings: https://github.com/tari-project/tari/releases
 
-Find the latest release (v2.1.0 in my case). You can tell you're looking at the latest release because of 
-the "Latest" text just to the right of the version number.
+Note that any version with the string "-pre" in it, such as "v2.1.1-pre.0" is destined for a TestNet and
+therefore is probably not what you're looking for. Similarly, any version containing "-rc", such as
+"v2.1.0-rc.0" is the release candidate for the future StageNet/MainNet release.
 
-See the "Assets" section just under "Contributors". Go to the bottom of the Assets section and click on
+So find the latest release without "-pre" or "-rc", (this is v2.1.0 in my case). You can tell you're 
+looking at the latest release because of the "Latest" text just to the right of the version number.
+
+Now see the "Assets" section just under "Contributors". Go to the bottom of the Assets section and click on
 the "Show all nn assets" link if it's there. In my case this link says "Show all 88 assets".
 
 Scroll down until you see the tari_suite-n.n.n zip file. In my case this is:
@@ -89,6 +95,8 @@ Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
   inflating: start_tor.sh
   inflating: tari_suite-2.1.0-0dflede-linux-x86_64.sha256
 ```
+
+Now we're getting somewhere.
 
 ## Step 4. Start the console wallet
 
