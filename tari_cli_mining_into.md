@@ -177,7 +177,7 @@ help
 
 ## Step 6. Start the miner
 
-Create a new Linux window and start the miner:
+Create a new Linux window and start the Sha3x miner:
 
 ```console
 ./minotari_miner
@@ -192,7 +192,15 @@ Initializing logging according to "/root/.tari/mainnet/config/miner/log4rs.yml"
 Please enter 'wallet-payment-address' ('quit' or 'exit' to quit) :
 ```
 
-TODO! I have no idea how to get the correct address from the console wallet ;-(
+Locate the address in the console wallet as follows:
+
+1. Use the left or right arrrow to move to the "Recieve" tab
+2. Copy the "Tari Address interactive" address
  
+
+Enter that address for the miner to use 
   
  
+## Step 7.  RandomX/Monero Merge Mining ?
+
+TODO
