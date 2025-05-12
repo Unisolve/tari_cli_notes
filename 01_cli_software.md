@@ -1,6 +1,6 @@
 # Download and verify the software
  
-## Step 1 Check your OS
+## Step 1. Check your OS
 
 Run this one-line command:
 

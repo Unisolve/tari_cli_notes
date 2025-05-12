@@ -30,11 +30,11 @@ Start the [console wallet](03_console_wallet.md)
 
 ## Step 4. The sha3x CPU miner
 
-Start the [sha3x CPU miner](04_sha3x_cpu_miner)
+Start the [sha3x CPU miner](04_sha3x_cpu_miner.md)
 
 ## Step 5. The sha3x GPU miner
 
-Start the [sha3x GPU miner](05_sha3x_gpu_miner)
+Start the [sha3x GPU miner](05_sha3x_gpu_miner.md)
 
 
 [^1]: We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
