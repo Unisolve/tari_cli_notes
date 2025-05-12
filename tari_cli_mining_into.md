@@ -18,22 +18,26 @@ I need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
 
 Run this one-line command:
 
-```sh
+```console
 grep -s "^PRETTY_NAME=" /etc/os-release | sed 's/PRETTY_NAME=//;s/"//g' || cat /etc/*release 2>/dev/null | head -n1 || uname -sr
 ```
 
 If you're on Ubuntu 22.04 you should see:
 
-  Ubuntu 22.04.4 LTS
+```console
+Ubuntu 22.04.4 LTS
+```
 
 Otherwise, the one-liner script tries very hard to return as useful value, eg: 
 
-* Ubuntu 20.04.6 LTS
-* CentOS Linux 7 (Core)
-* AlmaLinux 9.4 (Seafoam Ocelot)
-* Ubuntu 16.04.4 LTS
-* Raspbian GNU/Linux 10 (buster)
-* Ubuntu quantal (12.10)
+```console
+Ubuntu 20.04.6 LTS
+CentOS Linux 7 (Core)
+AlmaLinux 9.4 (Seafoam Ocelot)
+Ubuntu 16.04.4 LTS
+Raspbian GNU/Linux 10 (buster)
+Ubuntu quantal (12.10)
+```
   
 These command line instructions might help you with other, recent Linux OSes, but for now we're concentratng 
 on Ubunu 22.04
@@ -51,14 +55,16 @@ the "Show all nn assets" link if it's there. In my case this link says "Show all
 
 Scroll down until you see the tari_suite-n.n.n zip file. In my case this is:
 
-  tari_suite-2.1.0-0df1ede-linux-x86_64.zip
+```console
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip
+```
 
 right click to copy the download link.
 
 Now use this command on your Linux setrver to download tari_suite to that server. **Make sure you replace the two occurences** 
 **of the "2.1.0" string in the URL below with the release that you're interested in**:
 
-```sh
+```console
 wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.1.0-0df1ede-linux-x86_64.zip
 ```
 
@@ -66,13 +72,13 @@ wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.
 
 Once again, replace the "2.1.0" string with your release number:
 
-```sh
+```console
 unzip tari_suite-2.1.0-0df1ede-linux-x86_64.zip
 ```
 
 You should see output like this:
 
-```sh
+```console
 Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
   inflating: libminotari_mining_helper_ffi.so
   inflating: minotari_console_wallet
@@ -88,9 +94,11 @@ Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
 
 Create a new Linux window and start the console wallet:
 
+```console
 ./minotari_console_wallet
+```
 
-```sh
+```console
 Initializing logging according to "/root/.tari/mainnet/config/wallet/log4rs.yml"
 Node config does not exist.
 Would you like to mine (Y/n)?
@@ -101,7 +109,7 @@ If your're asked "Would you like to mine", answer "Y"
 
 Then you'll see:
 
-```sh
+```console
 ⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣿⣶⣦⣀
 ⠀⢀⣤⣾⣿⡿⠋⠀⠀⠀⠀⠉⠛⠿⣿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀⢰⣿⣾⣾⣾⣾⣾⣾⣾⣾⣾⣿⠀⠀⠀⣾⣾⣾⡀⠀⠀⠀⠀⢰⣾⣾⣾⣾⣿⣶⣶⡀⠀⠀⠀⢸⣾⣿⠀
 ⠀⣿⣿⣿⣿⣿⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠉⠛⣿⣿⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⣿⣿⡏⠉⠉⠉⠉⠀⠀⣰⣿⣿⣿⣿⠀⠀⠀⠀⢸⣿⣿⠉⠉⠉⠛⣿⣿⡆⠀⠀⢸⣿⣿⠀
@@ -119,13 +127,13 @@ Console Wallet
 >>
 ```
 
-Create a new wallet by entering "1"
-
-You'll be asked to enter and then confirm your wallet pasphrase
+Create a new wallet by entering "1". You'll then be asked to enter and then confirm your wallet pasphrase
 
 The next question is:
 
+```console
 Would you like to use a connected hardware wallet? (Supported types: Ledger) (Y/n)
+```
 
 I'm choosing no, so I enter "n" here.
 
@@ -136,13 +144,13 @@ you are never going to be shown these seed words again. Copy those seed words sa
 
 Create a new Linux window and start the node:
 
-```sh
+```console
 ./minotari_node
 ```
 
 If you're asked:
 
-```sh
+```console
 Node identity does not exist.
 Would you like to create one (Y/n)?
 ```
@@ -152,25 +160,30 @@ answer "Y"
 Once the node is running, you can enter control-c at any time to call up the command
 prompt and enter commands. For example:
 
+```console
 version
+```
 
 or
 
+```console
 list-peers
+```
 
 or 
-
+```console
 help
+```
 
 ## Step 6. Start the miner
 
-```sh
+```console
 ./minotari_miner
 ```
 
 You should see:
 
-```sh
+```console
 Initializing logging according to "/root/.tari/mainnet/config/miner/log4rs.yml"
 04:21 INFO  Starting Minotari Miner version: 2.1.0-0df1ede27452e090cfa81c28338df390e9a11e6e-release
 
