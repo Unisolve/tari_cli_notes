@@ -14,7 +14,7 @@ the topic over time.]
 
 ## Criticisms and corrections and ideas
 
-I need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
+we need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
 
 ## Step 1 Check your OS
 
@@ -53,11 +53,11 @@ Note that any version with the string "-pre" in it, such as "v2.1.1-pre.0" is de
 therefore is probably not what you're looking for. Similarly, any version containing "-rc", such as
 "v2.1.0-rc.0" is the release candidate for the future StageNet/MainNet release.
 
-So find the latest release without "-pre" or "-rc", (this is v2.1.0 in my case). You can tell you're 
+So find the latest release without "-pre" or "-rc", (this is "v2.1.0" in my case). You can tell you're 
 looking at the latest release because of the "Latest" text just to the right of the version number.
 
 Now see the "Assets" section just under "Contributors". Go to the bottom of the Assets section and click on
-the "Show all nn assets" link if it's there. In my case this link says "Show all 88 assets".
+the "Show all *nn* assets" link if it's there. In my case this link says "Show all 88 assets".
 
 Scroll down until you see the tari_suite-n.n.n zip file. In my case this is:
 
@@ -76,7 +76,8 @@ wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.
 
 ## Step 3. Extract files 
 
-Replace the "2.1.0" string with your release number:
+We'll use "unzip" to extract the release files we want. Be sure to replace the "2.1.0" string with your 
+release number:
 
 ```console
 unzip tari_suite-2.1.0-0df1ede-linux-x86_64.zip
@@ -135,7 +136,7 @@ Console Wallet
 >>
 ```
 
-Create a new wallet by entering "1". You'll then be asked to enter and then confirm your wallet pasphrase.
+Create a new wallet by entering "1". You'll then be asked to enter, and then confirm, your wallet passphrase.
 
 The next question is:
 
@@ -143,7 +144,7 @@ The next question is:
 Would you like to use a connected hardware wallet? (Supported types: Ledger) (Y/n)
 ```
 
-I'm choosing no, so I enter "n" here.
+We're choosing no, so we enter "n" here.
 
 You are then asked to copy your seed words and type the word "confirm" to confirm that, yes,
 you are never going to be shown these seed words again. Copy those seed words safely!
@@ -200,12 +201,11 @@ Initializing logging according to "/root/.tari/mainnet/config/miner/log4rs.yml"
 Please enter 'wallet-payment-address' ('quit' or 'exit' to quit) :
 ```
 
-Locate the address in the console wallet as follows:
+Now click back to your Console Wallet window and locate the address in the console wallet as follows:
 
 1. Use the left or right arrrow to move to the "Receive" tab
 2. Copy the "Tari Address interactive" address
  
-
 Enter that address for the miner to use 
   
  
