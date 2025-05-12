@@ -9,8 +9,8 @@ We'll also assume that you're only interested in mining on the Tari mainnet.
 These notes don't assume that you have a Linux desktop available to you. The command line 
 is all you need.
 
-[Please be aware that at present these notes are incomplete but I hope to address more of 
-the topic over time.]
+[ TODO: Please be aware that at present these notes are incomplete but I hope to address more of 
+the topic over time. ]
 
 ## Criticisms and corrections and ideas
 
@@ -73,6 +73,22 @@ just copied. For me this looks like:
 ```console
 wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.1.0-0df1ede-linux-x86_64.zip
 ```
+
+Now we'll get the sha256 check file and run 'shasum -c' on it to confirm that the zip file we've downloaded 
+is the one prepared by the Tari project team.
+
+```console
+wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.1.0-0df1ede-linux-x86_64.zip.sha256
+
+shasum -c tari_suite-2.1.0-0df1ede-linux-x86_64.zip.sha256
+```
+
+You should see output like:
+
+```console
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip: OK
+```
+[ TODO: Is this step adequate? ]
 
 ## Step 3. Extract files 
 
