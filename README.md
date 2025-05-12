@@ -13,11 +13,10 @@ is all you need.
 [ TODO: Please be aware that at present these notes are incomplete but I hope to address more of 
 the topic over time. ]
 
-## Criticisms and corrections and ideas
+Have any criticisms or corrections? [^1]
 
-We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
 
-## Step 1 Download and verify the software
+## Step 1. Download and verify the software
 
 [Download and verify the software](01_cli_software.md)
 
@@ -37,3 +36,4 @@ We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
 
 [Start the sha3x GPU miner](05_sha3x_gpu_miner)
 
+[^1]: We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
