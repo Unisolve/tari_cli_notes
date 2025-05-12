@@ -14,7 +14,7 @@ the topic over time. ]
 
 ## Criticisms and corrections and ideas
 
-we need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
+We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
 
 ## Step 1 Check your OS
 
