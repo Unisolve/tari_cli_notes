@@ -8,10 +8,8 @@ the console wallet.
 We'll also assume that you're only interested in mining on the Tari mainnet. 
 
 These notes don't assume that you have a Linux desktop available to you. The command line 
-is all you need.
-
-[ TODO: Please be aware that at present these notes are incomplete but I hope to address more of 
-the topic over time. ]
+is all you need. *Please be aware that at present these notes are incomplete but I hope to address more of 
+the topic over time.*
 
 Have any criticisms or corrections? [^1]
 
