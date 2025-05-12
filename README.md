@@ -18,22 +18,23 @@ Have any criticisms or corrections? [^1]
 
 ## Step 1. Download and verify the software
 
-[Download and verify the software](01_cli_software.md)
+Download and verify [the software](01_cli_software.md)
 
 ## Step 2. The local tari node
 
-[Start the local tari node](02_local_tari_node.md)
+Start the [local tari node](02_local_tari_node.md)
 
 ## Step 3. The console wallet
 
-[Start the console wallet](03_console_wallet.md)
+Start the [console wallet](03_console_wallet.md)
 
 ## Step 4. The sha3x CPU miner
 
-[Start the sha3x CPU miner](04_sha3x_cpu_miner)
+Start the [sha3x CPU miner](04_sha3x_cpu_miner)
 
 ## Step 5. The sha3x GPU miner
 
-[Start the sha3x GPU miner](05_sha3x_gpu_miner)
+Start the [sha3x GPU miner](05_sha3x_gpu_miner)
+
 
 [^1]: We need them! Send criticisms, notes or ideas to: simon@unisolve.com.au
