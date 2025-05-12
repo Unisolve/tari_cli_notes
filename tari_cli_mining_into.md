@@ -194,7 +194,7 @@ Please enter 'wallet-payment-address' ('quit' or 'exit' to quit) :
 
 Locate the address in the console wallet as follows:
 
-1. Use the left or right arrrow to move to the "Recieve" tab
+1. Use the left or right arrrow to move to the "Receive" tab
 2. Copy the "Tari Address interactive" address
  
 
