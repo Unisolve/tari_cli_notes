@@ -28,6 +28,19 @@ Ubuntu quantal (12.10)
 These command line instructions might also help you with other recent Linux OSes, but for 
 now we're concentratng on Ubunu 22.04
 
+## Step 2. Create a top-level directory
+
+Create an empty directory somewhere on your server and change directory there. We'll use the
+name 'tar_cli' here, but call it anything that makes sense to you.
+
+We'll then make a "bin" sub-directory. Don't forget this step.
+
+```console
+mkdir tari_cli
+cd tar_cli
+mkdir bin
+```
+
 ## Step 2. Download tari-suite
 
 Using your desktop browser, (or a browser in the Linux desktop if you have one), go to this page 
@@ -72,9 +85,51 @@ You should see output like:
 ```console
 tari_suite-2.1.0-0df1ede-linux-x86_64.zip: OK
 ```
-[ TODO: Is this step adequate? ]
 
-## Step 3. Extract files 
+At the end of this step, your top-level directory should contain just your 2 downloaded files and your empty 'bin'
+directory:
+
+```console
+TODO
+```
+
+## Step 3. Download glytex - a GPU based miner for Tari
+
+Check out the the latest offerings at: https://github.com/tari-project/glytex/releases
+
+In this example we'll be using v0.2.26, your version number might be different.
+
+```console
+wget -v https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
+wget -v https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip
+
+shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
+```
+You should see output like:
+
+```console
+TODO
+```
+
+At the end of this step, your top-level directory should contain just your 4 downloaded files and your empty 'bin'
+directory:
+
+```console
+TODO
+```
+
+## Step 4. Extract files 
+
+```console
+cd bins
+unzip ../glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
+shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.sha256
+
+./glytex --help
+
+./glytex --detect=true --engine=opencl
+```
+
 
 We'll use "unzip" to extract the release files we want. Be sure to replace the "2.1.0" string with your 
 release number:
