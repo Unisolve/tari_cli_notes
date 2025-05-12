@@ -59,10 +59,10 @@ Scroll down until you see the tari_suite-n.n.n zip file. In my case this is:
 tari_suite-2.1.0-0df1ede-linux-x86_64.zip
 ```
 
-right click to copy the download link.
+Right click on that URL in the "Assets" section of the releases page to copy the download link.
 
-Now use this command on your Linux setrver to download tari_suite to that server. **Make sure you replace the two occurences** 
-**of the "2.1.0" string in the URL below with the release that you're interested in**:
+Now use the "wget" command on your Linux server to download tari_suite to that server using the link you
+just copied. For me this looks like:
 
 ```console
 wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.1.0-0df1ede-linux-x86_64.zip
@@ -70,7 +70,7 @@ wget https://github.com/tari-project/tari/releases/download/v2.1.0/tari_suite-2.
 
 ## Step 3. Extract files 
 
-Once again, replace the "2.1.0" string with your release number:
+Replace the "2.1.0" string with your release number:
 
 ```console
 unzip tari_suite-2.1.0-0df1ede-linux-x86_64.zip
@@ -105,7 +105,7 @@ Would you like to mine (Y/n)?
 NOTE: this will enable additional gRPC methods that could be used to monitor and submit blocks from this node.
 ```
 
-If your're asked "Would you like to mine", answer "Y"
+If you're asked "Would you like to mine", answer "Y"
 
 Then you'll see:
 
@@ -127,7 +127,7 @@ Console Wallet
 >>
 ```
 
-Create a new wallet by entering "1". You'll then be asked to enter and then confirm your wallet pasphrase
+Create a new wallet by entering "1". You'll then be asked to enter and then confirm your wallet pasphrase.
 
 The next question is:
 
@@ -176,6 +176,8 @@ help
 ```
 
 ## Step 6. Start the miner
+
+Create a new Linux window and start the miner:
 
 ```console
 ./minotari_miner
