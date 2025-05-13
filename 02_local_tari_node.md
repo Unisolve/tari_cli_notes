@@ -46,6 +46,11 @@ or
 ```console
 list-peers
 ```
+or
+
+```console
+status
+```
 
 or 
 ```console
