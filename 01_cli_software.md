@@ -159,7 +159,7 @@ Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
   inflating: tari_suite-2.1.0-0dflede-linux-x86_64.sha256
 ```
 
-Next unzip the glytex release.
+Next unzip the glytex release. Be sure to replace the "0.2.26" string with your release number:
 
 ```console
 unzip ../glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
@@ -173,16 +173,35 @@ Archive:  ../glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
   inflating: glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.sha256
 ```
 
-# Step 5. Run some quick tests
+## Step 5. Run some quick tests
 
+Test minotari_node:
 
-TODO
+```console
 ./minotari_node --version
+```
 
-./glytex --help
+You should see something like this:
 
+```console
+minotari_node 2.1.0
+```
+
+
+Test glytex:
+
+```console
 ./glytex --detect=true --engine=opencl
 ```
+
+If you one or more GPUs, you should see something like this:
+
+```console
+List of the devices for the Platform: NVIDIA CUDA
+device: NVIDIA GeForce RTX 4090
+Device nr 1: NVIDIA GeForce RTX 4090
+```
+
 Now we're getting somewhere.
 
 
