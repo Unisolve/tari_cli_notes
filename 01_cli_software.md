@@ -204,5 +204,4 @@ Device nr 1: NVIDIA GeForce RTX 4090
 
 Now we're getting somewhere.
 
-
 [Return to the main README](README.md)
