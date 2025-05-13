@@ -162,8 +162,22 @@ Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
 Next unzip the glytex release.
 
 ```console
-unzip ../glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
-shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.sha256
+unzip ../glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
+```
+
+You should see output like this:
+
+```console
+Archive:  ../glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
+  inflating: glytex
+  inflating: glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.sha256
+```
+
+# Step 5. Run some quick tests
+
+
+TODO
+./minotari_node --version
 
 ./glytex --help
 
