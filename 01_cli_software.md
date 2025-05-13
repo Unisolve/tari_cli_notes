@@ -103,10 +103,10 @@ Check out the the latest offerings at: https://github.com/tari-project/glytex/re
 In this example we'll be using v0.2.26, your version number might be different.
 
 ```console
-wget -v https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
-wget -v https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip
+wget https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
+wget https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip.sha256
 
-shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
+shasum -c glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip.sha256
 ```
 You should see output like:
 
@@ -118,27 +118,26 @@ At the end of this step, your top-level directory should contain just your 4 dow
 directory:
 
 ```console
+user@server:/workspace/tari_cli# ls -1
 TODO
 ```
 
+So far, so good.
+
 ## Step 4. Extract files 
 
+Here we change directory into the "bin" subdirectory and extract our files.
+
 ```console
-cd bins
-unzip ../glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
-shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.sha256
-
-./glytex --help
-
-./glytex --detect=true --engine=opencl
+cd bin
 ```
 
+Don't forget the above step!
 
-We'll use "unzip" to extract the release files we want. Be sure to replace the "2.1.0" string with your 
-release number:
+Now we'll use "unzip" to extract the release files we want. We'll start with tari_suite. Be sure to replace the "2.1.0" string with your release number:
 
 ```console
-unzip tari_suite-2.1.0-0df1ede-linux-x86_64.zip
+unzip ../tari_suite-2.1.0-0df1ede-linux-x86_64.zip
 ```
 
 You should see output like this:
@@ -155,6 +154,16 @@ Archive:  tari_suite-2.1.0-0dflede-linux-x86_64.zip
   inflating: tari_suite-2.1.0-0dflede-linux-x86_64.sha256
 ```
 
+Next unzip the glytex release.
+
+```console
+unzip ../glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.zip.sha256
+shasum -c glytex-combined-macos-arm64-mainnet-0.2.26-78e833f.sha256
+
+./glytex --help
+
+./glytex --detect=true --engine=opencl
+```
 Now we're getting somewhere.
 
 
