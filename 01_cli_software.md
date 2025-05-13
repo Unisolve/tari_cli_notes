@@ -100,7 +100,8 @@ tari_suite-2.1.0-0df1ede-linux-x86_64.zip.sha256
 
 Check out the the latest offerings at: https://github.com/tari-project/glytex/releases
 
-In this example we'll be using v0.2.26, your version number might be different.
+In this example we'll be using v0.2.26, your version number might be different. And remember, we want the "mainnet" release.
+
 
 ```console
 wget https://github.com/tari-project/glytex/releases/download/v0.2.26/glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
@@ -111,7 +112,7 @@ shasum -c glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip.sha256
 You should see output like:
 
 ```console
-TODO
+glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip: OK
 ```
 
 At the end of this step, your top-level directory should contain just your 4 downloaded files and your empty 'bin'
@@ -119,7 +120,11 @@ directory:
 
 ```console
 user@server:/workspace/tari_cli# ls -1
-TODO
+bin
+glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip
+glytex-opencl-linux-x86_64-mainnet-0.2.26-78e833f.zip.sha256
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip.sha256
 ```
 
 So far, so good.
