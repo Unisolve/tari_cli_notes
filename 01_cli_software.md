@@ -37,7 +37,7 @@ We'll then make a "bin" sub-directory. Don't forget this step.
 
 ```console
 mkdir tari_cli
-cd tar_cli
+cd tari_cli
 mkdir bin
 ```
 
