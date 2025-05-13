@@ -4,7 +4,7 @@
 These notes cover mining Tari on the Linux command line. They are not part of the Tari project
 and have been produced in the hope that you'll find them useful. The setup documented here assumes 
 a Linux server running Ubuntu 22.04 with one or more GPUs. For simplicity, we'll be using 
-the console wallet.
+the console wallet and we will be mining solo. Pool mining will be covered in a separate guide.
 
 We'll also assume that you're only interested in mining on the Tari mainnet. 
 
