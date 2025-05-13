@@ -12,7 +12,7 @@ These notes don't assume that you have a Linux desktop available to you. The com
 is all you need. *Please be aware that at present these notes are incomplete but I hope to address more of 
 the topic over time.*
 
-Have any criticisms or corrections? [^1] The notes are not part of the Tari project
+Have any criticisms or corrections? [^1]
 
 
 ## Step 1. Download and verify the software
