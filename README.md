@@ -1,7 +1,8 @@
 
 # Introduction
  
-These notes cover mining Tari on the Linux command line. The setup documented here assumes 
+These notes cover mining Tari on the Linux command line. They are not part of the Tari project
+and have been produced in the hope that you'll find them useful. The setup documented here assumes 
 a Linux server running Ubuntu 22.04 with one or more GPUs. For simplicity, we'll be using 
 the console wallet.
 
@@ -11,7 +12,7 @@ These notes don't assume that you have a Linux desktop available to you. The com
 is all you need. *Please be aware that at present these notes are incomplete but I hope to address more of 
 the topic over time.*
 
-Have any criticisms or corrections? [^1]
+Have any criticisms or corrections? [^1] The notes are not part of the Tari project
 
 
 ## Step 1. Download and verify the software
