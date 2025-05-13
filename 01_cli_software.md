@@ -90,7 +90,10 @@ At the end of this step, your top-level directory should contain just your 2 dow
 directory:
 
 ```console
-TODO
+user@server:/workspace/tari_cli# ls -1
+bin
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip
+tari_suite-2.1.0-0df1ede-linux-x86_64.zip.sha256
 ```
 
 ## Step 3. Download glytex - a GPU based miner for Tari
