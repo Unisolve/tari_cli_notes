@@ -1,9 +1,14 @@
 # Start the sha3x CPU miner
 
-Create a new Linux window and start the Sha3x miner:
+With the wallet address in hand, create a new Linux window to start the Sha3x miner. In this
+example you'll need to replace "123456789" with the address you saved from the "Tari Address interactive" 
+field in the console_wallet.
 
 ```console
-./minotari_miner
+./minotari_miner -b ./tari-mainnet-data \
+    --network mainnet \
+    -p miner.base_node_grpc_address=http://127.0.0.1:18142 \
+    -p miner.wallet_payment_address="123456789"
 ```
 
 You should see:
@@ -11,16 +16,6 @@ You should see:
 ```console
 Initializing logging according to "/root/.tari/mainnet/config/miner/log4rs.yml"
 04:21 INFO  Starting Minotari Miner version: 2.1.0-0df1ede27452e090cfa81c28338df390e9a11e6e-release
-
-Please enter 'wallet-payment-address' ('quit' or 'exit' to quit) :
 ```
 
-Now click back to your Console Wallet window and locate the address in the console wallet as follows:
-
-1. Use the left or right arrrow to move to the "Receive" tab
-2. Copy the "Tari Address interactive" address
- 
-Enter that address for the miner to use 
-  
- 
 [Return to the main README](README.md)
