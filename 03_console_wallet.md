@@ -69,8 +69,8 @@ is just a bit narrower than the console wallet window and as a result the wallet
 
 If you copy the address in the "Tari Address interactive"  field you'll get a truncated value.
 
-So first make sure that the window is wide enough to inclide the full width of the "Coonnection Details" 
-pane before copying the address.
+So first make sure that the window is wide enough to include the full width of the "Connection Details" 
+pane before copying the address. Make sure you see whitespace at the end of the addresses.
 
 ![View now wide enough to see full addresses](images/console_wallet_recv_2.png)
 
